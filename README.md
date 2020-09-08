@@ -24,7 +24,7 @@ Welcome to the Wombat Linux community package repository.
 
 When submitting a package to the community repository, observe the following rules:
 
--   The submitted .uspm(s) must not build applications  **already in any**  of the  **official**  binary  **repositories**  under any circumstances. Check the  [official package database](https://packages.afroraydude.com/wombatlinux/uspm)  for the package. If the most up-to-date version of it exists,  **do not**  submit the package. If the official package is out-of-date, you may create a pull request with that information within the request.
+-   The submitted .uspm(s) must not build applications  **already in any**  of the  **official**  binary  **repositories**  under any circumstances. Check the  official package database ([core](http://repo.wombatlinux.org/core/packages.json) or [extra](http://repo.wombatlinux.org/core/packages.json))  for the package. If the most up-to-date version of it exists,  **do not**  submit the package. If the official package is out-of-date, you may create a pull request with that information within the request.
 
 -   **Check the Community Package Repository**  if the package  **already exists**. If it is currently maintained, changes can be submitted in a comment for the maintainer's attention. If it is unmaintained or the maintainer is unresponsive, the package can be adopted and updated as required, and you may do as above.
 
