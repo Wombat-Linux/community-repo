@@ -1,0 +1,44 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 id="the-community-package-repository">The Community Package Repository</h1>
+    <p>Welcome to the Wombat Linux community package repository.</p>
+    <h2 id="how-to-submit-to-the-community-package-repository">How to submit to the community package repository</h2>
+    <ol>
+      <li>Create a fork of the repository</li>
+      <li>Add your chosen package file</li>
+      <li>
+        Modify the <code>packages.json</code> file with the name and MD5 hash of your package. For an example: 
+        <pre><code class="lang-json">{
+ ...
+ <span class="hljs-string">"mypackage"</span>:<span class="hljs-string">"da49bdf9405dd9a6e44808bfe9e6dfcf"</span>
+ ...
+}
+</code></pre>
+      </li>
+      <li>Create a pull request with a general description of the package (AKA what it does or its uses) and thats about it.</li>
+      <li>Done!</li>
+    </ol>
+    <h2 id="rules">Rules</h2>
+    <p>(based on the <a href="https://wiki.archlinux.org/index.php/AUR_submission_guidelines">AUR submission guidelines</a>)</p>
+    <p>When submitting a package to the community repository, observe the following rules:</p>
+    <ul>
+      <li>
+        <p>The submitted .uspm(s) must not build applications  <strong>already in any</strong>  of the  <strong>official</strong>  binary  <strong>repositories</strong>  under any circumstances. Check the  official package database (<a href="http://repo.wombatlinux.org/core/packages.json">core</a> or <a href="http://repo.wombatlinux.org/extra/packages.json">extra</a>)  for the package. If the most up-to-date version of it exists,  <strong>do not</strong>  submit the package. If the official package is out-of-date, you may create a pull request with that information within the request.</p>
+      </li>
+      <li>
+        <p><strong>Check the Community Package Repository</strong>  if the package  <strong>already exists</strong>. If it is currently maintained, changes can be submitted in a comment for the maintainer&#39;s attention. If it is unmaintained or the maintainer is unresponsive, the package can be adopted and updated as required, and you may do as above.</p>
+      </li>
+    </ul>
+    <p>The community package repository and official repositories are intended for packages which install generally software and software-related content, including one or more of the following: executables, libraries, configuration setups, etc.</p>
+    <ul>
+      <li>
+        <p>If a package needs to be fixed due to some incompatibility <strong>IN AND ONLY IN</strong> either the <code>PACKAGECODE</code> or the <code>PACKAGEDATA</code> files, create a pull request.</p>
+      </li>
+      <li>
+        <p>Packages that <strong>do not</strong> use  prebuilt  <a href="https://en.wikipedia.org/wiki/Deliverable">deliverables</a>, when the prebuilt package is available, must have <code>-src</code> appended to the package name (ie: <code>uspm-main-src</code>). </p>
+      </li>
+    </ul>
+  </body>
+</html>
